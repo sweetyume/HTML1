@@ -140,3 +140,6 @@ i {
   justify-content: space-around;
 
 }
+.fa-free-code-camp:hover, .fa-codepen:hover, .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover, .fa-medium:hover {
+  color: #d6d3d3;
+}
