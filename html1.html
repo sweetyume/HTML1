@@ -34,7 +34,7 @@
 
     <div id="presentation">
       <h2>Développeuse en herbe, Simplonienne, Hackeuse</h2>
-      <p>Passionnée de code, je milite pour un numérique inclusif et accessible. Développeuse fullstack Javascript à Simplon.co.</br>
+      <p>Passionnée de code, je milite pour un numérique inclusif et accessible. J'apprends le développement afin d'être Développeuse fullstack Javascript à Simplon.co.</br>
         Bienvenue sur cette page réalisée dans le cadre de notre premier jour de formation officielle à Simplon. Vive la P8!
       </p>
 
@@ -85,16 +85,9 @@
       <!-- fin reseaux sociaux -->
     </div>
     <script>
-  	$(window).scroll(function() {
-  		$('#slideUp').each(function(){
-  		var imagePos = $(this).offset().top;
-
-  		var topOfWindow = $(window).scrollTop();
-  			if (imagePos < topOfWindow+400) {
-  				$(this).addClass("slideUp");
-  			}
-  		});
-  	});
+    $('.hatch').click(function() {
+		$(this).addClass(".hatch");
+	});
   </script>
 
 </body>
