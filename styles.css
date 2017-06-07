@@ -7,9 +7,10 @@ body {
 }
 
 div {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  margin: 0 auto;
+  padding: 20px;
+  margin:  auto;
 }
 
 .rond {
@@ -66,26 +67,26 @@ nav a:hover {
 #presentation {
   background-color: #F3F3F3;
 }
-h1, h2 {
+h1, h2, p, caption {
 margin: 20px;
-}
-/*RESEAUX ME SUIVRE */
-
-.réseaux {
-
-  display: flex;
-  justify-content: space-around;
+padding: 20px;
 }
 
-i {
-  color: black;
-}
+
 
 /*TABLEAU*/
+
 #hobbies {
   display:flex;
   justify-content: center;
 }
+caption {
+  font-family: "Playfair Display", serif;
+  color: #320E3B;
+
+
+}
+
 table {
   color: #333;
   font-family: Helvetica, Arial, sans-serif;
@@ -93,11 +94,13 @@ table {
   border-collapse: collapse;
   margin-top: 20px;
   border-spacing: 0;
+  padding: 10px;
 }
 
 td, th {
   border: 1px solid #CCC;
   height: 40px;
+  padding: 10px;
 }
 
 th {
@@ -112,4 +115,28 @@ td {
 
 td:hover {
   background-color: #ddd;
+}
+
+
+/*RESEAUX ME SUIVRE */
+
+footer .réseaux {
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.fontawesome {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F3F3F3;
+
+}
+i {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+
 }
