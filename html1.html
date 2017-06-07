@@ -10,7 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+
 
 
 </head>
@@ -22,58 +26,77 @@
     <!-- MENU -->
     <nav>
       <a href="#presentation">A propos</a>
-      <a href="#reseaux">Contacts</a>
       <a href="#hobbies">Le Blabla</a>
+      <a href="#reseaux">Contacts</a>
     </nav>
     <!-- FIN MENU -->
-    <div id="presentation">
-      <h1> Amelle El Bakkal</h1>
-      <h2>Développeuse en herbe, Simplonienne, Hackeuse</h2>
-      <p>Passionnée de code, je milite pour un numérique inclusif et accessible. Développeuse fullstack Javascript à Simplon.co</p>
-    </div>
-    <!-- réseaux sociaux -->
+    <h1 class="hatch"> Amelle El Bakkal</h1>
 
-    <div id="reseaux">
-      <h3>Où me trouver?</h3>
+    <div id="presentation">
+      <h2>Développeuse en herbe, Simplonienne, Hackeuse</h2>
+      <p>Passionnée de code, je milite pour un numérique inclusif et accessible. Développeuse fullstack Javascript à Simplon.co.
+        Bienvenue sur cette page réalisée dans le cadre de notre premier jour de formation officielle à Simplon. Vive la P8!
+      </p>
+
+    </div>
+
+
+    <!-- Debuttableaux  -->
+
+    <div id="hobbies">
+
+      <table>
+          <caption><h2>Ce que j'aime, ce que je fais</h2></caption>
+        <tr>
+          <th><i class="fa fa-heart fa-3x" aria-hidden="true"></i></th>
+
+          <th><i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i></th>
+        </tr>
+        <tr>
+          <td><i class="fa fa-gamepad" aria-hidden="true"></i></td>
+          <td><i class="fa fa-html5" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-cutlery" aria-hidden="true"></i></td>
+          <td><i class="fa fa-css3" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-globe" aria-hidden="true"></i></td>
+
+          <td><i class="fa fa-code" aria-hidden="true"></i></td>
+        </tr>
+      </table>
+    </div>
+    <!-- fin tableaux  -->
+    <!-- réseaux sociaux -->
+    <h2>Où me trouver?</h2>
+
+    <footer id="reseaux">
       <div class="fontawesome">
-        <a href="http://freecodecamp.com" target="_blank"><i class="fa fa-free-code-camp icones" aria-hidden="true"></i></a>
-        <a href="https://codepen.io/" target="_blank"><i class="fa fa-codepen icones" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter icones" aria-hidden="true"></i></a>
-        <a href="https://github.com/" target="_blank"><i class="fa fa-github icones" aria-hidden="true"></i></a>
-        <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://medium.com/" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
-      </div>
+        <a href="http://freecodecamp.com" target="_blank"><i class="fa fa-free-code-camp fa-2x icones floating" aria-hidden="true"></i></a>
+        <a href="https://codepen.io/" target="_blank"><i class="fa fa-codepen fa-2x icones floating" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x icones floating" aria-hidden="true"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x icones floating
+        " aria-hidden="true"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin fa-2x floating" aria-hidden="true"></i></a>
+        <a href="https://medium.com/" target="_blank"><i class="fa fa-medium fa-2x floating" aria-hidden="true"></i></a>
+      </footer>
 
       <!-- fin reseaux sociaux -->
-
-      <!-- Debuttableaux  -->
-
-      <div id="hobbies">
-        <table>
-          <tr>
-            <th><i class="fa fa-heart" aria-hidden="true"></i></th>
-            <th></th>
-            <th><i class="fa fa-graduation-cap" aria-hidden="true"></i></th>
-          </tr>
-          <tr>
-            <td><i class="fa fa-gamepad" aria-hidden="true"></i></td>
-            <td><i class="fa fa-keyboard-o" aria-hidden="true"></i></td>
-            <td><i class="fa fa-html5" aria-hidden="true"></i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-cutlery" aria-hidden="true"></i></td>
-            <td></td>
-            <td><i class="fa fa-css3" aria-hidden="true"></i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-globe" aria-hidden="true"></i></td>
-            <td></td>
-            <td><i class="fa fa-code" aria-hidden="true"></i></td>
-          </tr>
-        </table>
-      </div>
-      <!-- fin tableaux  -->
     </div>
+    <script>
+  	$(window).scroll(function() {
+  		$('#slideUp').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("slideUp");
+  			}
+  		});
+  	});
+  </script>
+
 </body>
 
 </html>
